@@ -1,0 +1,1086 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google-translate-customization" content="108d9124921d80c3-80e20d618ff053c8-g4f02ec6f3dba68b7-c">
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>我的博客创建经历（github） | HaHa233的博客</title>
+<meta name="generator" content="Jekyll v4.3.3">
+<meta property="og:title" content="我的博客创建经历（github）">
+<meta name="author" content="haha233jpg">
+<meta property="og:locale" content="en_US">
+<meta name="description" content="大致经历 github仓库创建 仓库设置 博客网页设置 注意事项">
+<meta property="og:description" content="大致经历 github仓库创建 仓库设置 博客网页设置 注意事项">
+<link rel="canonical" href="/jekyll-theme-yat/%E6%95%99%E7%A8%8B/%E5%8D%9A%E5%AE%A2/2024/04/17/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2%E5%88%9B%E5%BB%BA%E7%BB%8F%E5%8E%86-Github.html">
+<meta property="og:url" content="/jekyll-theme-yat/%E6%95%99%E7%A8%8B/%E5%8D%9A%E5%AE%A2/2024/04/17/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2%E5%88%9B%E5%BB%BA%E7%BB%8F%E5%8E%86-Github.html">
+<meta property="og:site_name" content="HaHa233的博客">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2024-04-17T00:00:00+00:00">
+<meta name="twitter:card" content="summary">
+<meta property="twitter:title" content="我的博客创建经历（github）">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"haha233jpg"},"dateModified":"2024-04-17T00:00:00+00:00","datePublished":"2024-04-17T00:00:00+00:00","description":"大致经历 github仓库创建 仓库设置 博客网页设置 注意事项","headline":"我的博客创建经历（github）","mainEntityOfPage":{"@type":"WebPage","@id":"/jekyll-theme-yat/%E6%95%99%E7%A8%8B/%E5%8D%9A%E5%AE%A2/2024/04/17/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2%E5%88%9B%E5%BB%BA%E7%BB%8F%E5%8E%86-Github.html"},"url":"/jekyll-theme-yat/%E6%95%99%E7%A8%8B/%E5%8D%9A%E5%AE%A2/2024/04/17/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2%E5%88%9B%E5%BB%BA%E7%BB%8F%E5%8E%86-Github.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="icon" href="">
+  <link rel="canonical" href="">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-noto-sans@0.0.72/index.min.css">
+  <link rel="stylesheet" href="/jekyll-theme-yat/assets/css/main.css">
+  <script src="/jekyll-theme-yat/assets/js/main.js"></script><link type="application/atom+xml" rel="alternate" href="/jekyll-theme-yat/feed.xml" title="HaHa233的博客">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js"></script>
+<!-- and it's easy to individually load additional languages -->
+<script charset="UTF-8" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/languages/go.min.js" async></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+// Init highlight js
+document.addEventListener('DOMContentLoaded', function(event) {
+  var els = document.querySelectorAll('pre code')
+
+  function addLangData(block) {
+    var outer = block.parentElement.parentElement.parentElement;
+    var lang = block.getAttribute('data-lang');
+    for (var i = 0; i < outer.classList.length; i++) {
+      var cls = outer.classList[i];
+      if (cls.startsWith('language-')) {
+        lang = cls;
+        break;
+      }
+    }
+    if (!lang) {
+      cls = block.getAttribute('class');
+      lang = cls ? cls.replace('hljs ', '') : '';
+    }
+    if (lang.startsWith('language-')) {
+      lang = lang.substr(9);
+    }
+    block.setAttribute('class', 'hljs ' + lang);
+    block.parentNode.setAttribute('data-lang', lang);
+  }
+
+  function addBadge(block) {
+    var enabled = ('true' || 'true').toLowerCase();
+    if (enabled == 'true') {
+      var pre = block.parentElement;
+      pre.classList.add('badge');
+    }
+  }
+
+  function handle(block) {
+    addLangData(block);
+    addBadge(block)
+    hljs.highlightBlock(block);
+  }
+
+  for (var i = 0; i < els.length; i++) {
+    var el = els[i];
+    handle(el);
+  }
+});
+</script>
+
+<style>
+  /* code language badge */
+  pre.badge::before {
+    content: attr(data-lang);
+    color: #fff;
+    background-color: #ff4e00;
+    padding: 0 .5em;
+    border-radius: 0 2px;
+    text-transform: uppercase;
+    text-align: center;
+    min-width: 32px;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+  }
+
+  /* fix wrong badge display for firefox browser */
+  code > table pre::before {
+    display: none;
+  }
+</style>
+<script src="//cdnjs.cloudflare.com/ajax/libs/photoswipe/5.3.7/umd/photoswipe-lightbox.umd.min.js" async></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/photoswipe/5.3.7/umd/photoswipe.umd.min.js" async></script>
+<link href="//cdnjs.cloudflare.com/ajax/libs/photoswipe/5.3.7/photoswipe.min.css" rel="stylesheet">
+<style>
+  .pswp .pswp__container .pswp__img {
+    background-color: white;
+  }
+</style>
+
+<script>
+  function initPhotoSwipe() {
+    let customOptions = {};
+
+    try {
+      const data = ``.replaceAll("=>", ":");
+      customOptions = JSON.parse(data);
+    } catch (e) {
+      console.info("Invalid custom photo previewer options! " + e.message);
+    }
+
+    // Define object and gallery options
+    const options = Object.assign(
+      {
+        gallery: "section.main",
+        children: "a.photo-swipe",
+        photo_scale: 2,
+        // dynamic import is not supported in UMD version
+        pswpModule: PhotoSwipe,
+      },
+      customOptions
+    );
+
+    const galleryEl = document.querySelector(options.gallery);
+    if (!galleryEl) {
+      return;
+    }
+
+    const imgEls = [];
+    const els = galleryEl.querySelectorAll("img:not(.emoji)");
+    els.forEach((el) => {
+      if (el.src.trim() == "") {
+        return;
+      }
+      if (!imgEls.includes(el)) {
+        imgEls.push(el);
+      }
+    });
+
+    if (imgEls.length === 0) {
+      return;
+    }
+
+    imgEls.forEach((imgEl) => {
+      imgEl.outerHTML = `
+      <a class="photo-swipe"
+        href="${imgEl.src}"
+        data-pswp-width="${
+          Math.max(imgEl.naturalWidth, imgEl.width) * options.photo_scale
+        }"
+        data-pswp-height="${
+          Math.max(imgEl.naturalHeight, imgEl.height) * options.photo_scale
+        }"
+        data-pswp-caption="${imgEl.getAttribute("caption") || imgEl.alt}"
+        target="_blank">
+        ${imgEl.outerHTML}
+      </a>`;
+    });
+
+    // Initialize PhotoSwipe 5
+    var lightbox = new PhotoSwipeLightbox(options);
+
+    lightbox.init();
+  }
+
+  window.addEventListener("load", initPhotoSwipe);
+</script>
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<header class="site-header site-header-transparent" role="banner">
+
+  <div class="wrapper">
+    <div class="site-header-inner">
+<span class="site-brand"><a class="site-brand-inner" rel="author" href="/jekyll-theme-yat/">
+  <img class="site-favicon" title="HaHa233的博客" src="" onerror="this.style.display='none'">
+  HaHa233的博客
+</a>
+</span><nav class="site-nav">
+          <input type="checkbox" id="nav-trigger" class="nav-trigger">
+          <label for="nav-trigger">
+            <span class="menu-icon">
+              <svg viewbox="0 0 18 15" width="18px" height="15px">
+                <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"></path>
+              </svg>
+            </span>
+          </label>
+
+          <div class="trigger">
+<a class="page-link" href="/jekyll-theme-yat/about.html">关于</a><a class="page-link" href="/jekyll-theme-yat/archives.html">帖子</a><a class="page-link" href="/jekyll-theme-yat/categories.html">类别</a><a class="page-link" href="/jekyll-theme-yat/">主页</a><a class="page-link" href="/jekyll-theme-yat/tags.html">标签</a>
+
+
+
+
+
+
+
+
+
+<div class="page-link" style="display: inline;">
+
+
+
+<div id="google_translate_element" style="display: none;">
+</div>
+
+<div class="ct-language">
+  <ul class="list-unstyled ct-language-dropdown">
+    
+    <li>
+      <a href="#" class="lang-select" data-lang="zh-CN">
+        
+        <img src="https://cdn.countryflags.com/thumbs/china/flag-400.png" title="Chinese(Simple)">
+        
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" class="lang-select" data-lang="en">
+        
+        <img src="https://cdn.countryflags.com/thumbs/united-states-of-america/flag-400.png" title="English">
+        
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" class="lang-select" data-lang="fr">
+        
+        <img src="https://cdn.countryflags.com/thumbs/france/flag-400.png" title="French">
+        
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" class="lang-select" data-lang="ja">
+        
+        <img src="https://cdn.countryflags.com/thumbs/japan/flag-400.png" title="Japanese">
+        
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" class="lang-select" data-lang="ko">
+        
+        <img src="https://cdn.countryflags.com/thumbs/south-korea/flag-400.png" title="Korean">
+        
+      </a>
+    </li>
+    
+    <li>
+      <a href="#" class="lang-select" data-lang="ru">
+        
+        <img src="https://cdn.countryflags.com/thumbs/russia/flag-400.png" title="Russian">
+        
+      </a>
+    </li>
+    
+  </ul>
+</div>
+
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+      pageLanguage: 'en',
+      autoDisplay: false,
+      layout: google.translate.TranslateElement.InlineLayout.VERTICAL
+    }, 'google_translate_element');
+
+    // Links to cross-origin destinations are unsafe
+    var gll = document.getElementsByClassName('goog-logo-link')[0];
+    if (gll) {
+      gll.setAttribute('rel', 'noopener');
+    }
+
+    function restoreLang() {
+      var iframe = document.getElementsByClassName('goog-te-banner-frame')[0];
+      if (!iframe) return;
+
+      var innerDoc = iframe.contentDocument || iframe.contentWindow.document;
+      var restore_el = innerDoc.getElementsByTagName("button");
+
+      for (var i = 0; i < restore_el.length; i++) {
+        if (restore_el[i].id.indexOf("restore") >= 0) {
+          restore_el[i].click();
+          var close_el = innerDoc.getElementsByClassName("goog-close-link");
+          close_el[0].click();
+          return;
+        }
+      }
+    }
+
+    function triggerHtmlEvent(element, eventName) {
+      var event;
+      if (document.createEvent) {
+        event = document.createEvent('HTMLEvents');
+        event.initEvent(eventName, true, true);
+        element.dispatchEvent(event);
+      } else {
+        event = document.createEventObject();
+        event.eventType = eventName;
+        element.fireEvent('on' + event.eventType, event);
+      }
+    }
+
+    var googleCombo = document.querySelector("select.goog-te-combo");
+    var langSelect = document.querySelector('.ct-language');
+    langSelect.addEventListener('click', function (event) {
+      if (!event.target) {
+        return;
+      }
+
+      var selected = document.querySelector('.ct-language .ct-language-selected');
+      if (selected) {
+        selected.classList.remove('ct-language-selected');
+      }
+
+      var target = event.target;
+      while (target && target !== langSelect) {
+        if (target.matches('.lang-select')) {
+          break;
+        }
+        target = target.parentElement;
+      }
+
+      if (target && target.matches('.lang-select')) {
+        var lang = target.getAttribute('data-lang');
+        if (googleCombo.value == lang) {
+          restoreLang();
+        } else {
+          target.parentElement.classList.add('ct-language-selected');
+          googleCombo.value = lang;
+          triggerHtmlEvent(googleCombo, 'change');
+        }
+      }
+
+      event.preventDefault();
+    });
+  }
+</script>
+
+<!--<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async></script>-->
+</div>
+</div>
+        </nav>
+</div>
+  </div>
+</header>
+
+<script>
+  function initHeader() {
+    var lastScrollY = getScrollPos().y;
+    var documentElement = document.documentElement;
+
+    function storeScrollData() {
+      var y = getScrollPos().y;documentElement.setAttribute("data-header-transparent", "");var scrollStatus = "";
+
+      if (y <= 0) {
+        scrollStatus = "top";
+      } else if ((window.innerHeight + y) >= document.body.offsetHeight) {
+        scrollStatus = "bottom";
+      } else {
+        var isScrollDown = (y - lastScrollY > 0) ? true : false;
+        scrollStatus = isScrollDown ? "down" : "up";
+      }
+
+      lastScrollY = y;
+      documentElement.setAttribute("data-scroll-status", scrollStatus);
+    }
+
+    window.addEventListener('scroll', function(e) {
+      storeScrollData();
+    });
+
+    storeScrollData();
+  }
+  document.addEventListener('DOMContentLoaded', initHeader);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+    html .page-banner {
+      background: #000;
+    }
+  </style>
+<style>html .page-banner {
+      height:  36.8vh;
+      min-height: 38vh;
+    }
+    html[data-scroll-status="top"] .page-banner {
+      height: 100vh;
+    }
+  </style>
+<style>
+    html .page-banner .page-banner-img > *:first-child {
+      opacity: 0.618;
+    }
+
+    html[data-theme="dark"] .page-banner .page-banner-img > *:first-child {
+      opacity: 0.443724;
+    }
+  </style>
+<style>
+    html .page-banner .page-banner-inner > *:first-child > *:nth-child(1) {
+      font-size: 4.25em; font-weight: bold; text-decoration: underline
+    }
+  </style>
+<style>
+    html .page-banner .page-banner-inner > *:first-child > *:nth-child(2) {
+      color: gold
+    }
+  </style>
+<section class="page-banner">
+    <div class="page-banner-img">
+<video autoplay="" poster="/jekyll-theme-yat/assets/images/%E6%B5%B7%E8%B1%9A.jpeg" playsinline>
+          <source src="/assets/videos/2024-4-24/oceans.mov">
+        </source></video>
+        <script>
+          (function() {
+            var video = document.querySelector('.page-banner .page-banner-img > video');
+            var videoPlay = function() {
+              video.play().catch (function() {
+                  video.muted = true;
+                  video.play();
+                });
+            }
+
+            video.onloadstart = function() {
+              video.currentTime = 8.5;
+              video.volume = 0.8;
+              video.muted = (video.volume == 0);
+              videoPlay();
+            }
+
+            video.onended = function() {
+              video.currentTime = 8.5;
+              video.volume = 0;video.play();}
+          })();
+        </script>
+</div>
+    <div class="wrapper">
+      <div class="page-banner-inner"><header class="post-header">
+  <h1 class="post-title p-name" itemprop="name headline">我的博客创建经历（github）</h1>
+  <h2 class="post-subtitle">还挺不错</h2>
+
+  <div class="post-meta">
+    <time class="dt-published" datetime="2024-04-17T00:00:00+00:00" itemprop="datePublished"><i class="fa fa-calendar"></i> 2024-04-17
+    </time><span class="post-author left-vsplit"><i class="fa fa-pencil"></i> haha233jpg</span>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> 约 1 分钟</span>
+  </div>
+<div class="post-tags">
+<a class="post-tag" href="/jekyll-theme-yat/tags.html#%E6%95%99%E7%A8%8B">#教程</a><a class="post-tag" href="/jekyll-theme-yat/tags.html#%E5%8D%9A%E5%AE%A2">#博客</a>
+</div></header></div>
+    </div>
+  </section><script>
+  function hashLocate(hashValue) {
+    hashValue = hashValue.replace(/^.*#h-/, '');
+    hashValue = decodeURIComponent(hashValue);
+    var element = document.getElementById(hashValue);
+
+    if (!element) {
+      return;
+    }
+
+    var header = document.querySelector('header.site-header');
+    var headerRect = header.getBoundingClientRect();
+    var headerTop = Math.floor(headerRect.top);
+    var headerHeight = Math.floor(headerRect.height);
+    var scrollPos = getScrollPos();
+    var offsetY = element.offsetTop - (headerTop + headerHeight + 20);
+
+    if (offsetY == scrollPos.y) {
+      return;
+    }
+
+    if (headerTop == 0  && offsetY > scrollPos.y) {
+      offsetY += headerHeight + 2;
+    } else if (headerTop < 0  && offsetY < scrollPos.y) {
+      offsetY -= headerHeight - 2;
+    }
+
+    smoothScrollTo(offsetY);
+  }
+
+  // The first event occurred
+  window.addEventListener('load', function(event) {
+    if (window.location.hash) {
+      hashLocate(window.location.hash);
+    }
+  });
+
+  // The first event occurred
+  window.addEventListener('click', function(event) {
+    if (event.target.tagName.toLowerCase() == 'a') {
+      hashLocate(event.target.getAttribute('href'));
+    }
+  });
+</script>
+<div class="theme-toggle">
+  <input type="checkbox" id="theme-switch">
+  <label for="theme-switch">
+    <div class="toggle"></div>
+    <div class="names">
+      <p class="light">明亮</p>
+      <p class="dark">暗色</p>
+    </div>
+  </label>
+</div>
+
+
+
+
+<script>
+  (function() {
+    var sw = document.getElementById('theme-switch');
+    var html = document.getElementsByTagName('html')[0];
+    var nightModeOption = ('auto' || 'auto').toLowerCase();
+    var storage = nightModeOption === 'manual'
+        ? localStorage
+        : sessionStorage;
+    var themeData = loadThemeData();
+
+    function saveThemeData(data) {
+      storage.setItem('theme', JSON.stringify(data));
+    }
+
+    function loadThemeData() {
+      var data = storage.getItem('theme');
+      try {
+        data = JSON.parse(data ? data : '');
+      } catch(e) {
+        data = { nightShift: undefined, autoToggleAt: 0 };
+        saveThemeData(data);
+      }
+      return data;
+    }
+
+    function handleThemeToggle(nightShift) {
+      themeData.nightShift = nightShift;
+      saveThemeData(themeData);
+      html.dataset.theme = nightShift ? 'dark' : 'light';
+      setTimeout(function() {
+        sw.checked = nightShift ? true : false;
+      }, 50);
+    }
+
+    function autoThemeToggle() {
+      // Next time point of theme toggle
+      var now = new Date();
+      var toggleAt = new Date();
+      var hours = now.getHours();
+      var nightShift = hours >= 19 || hours <=7;
+
+      if (nightShift) {
+        if (hours > 7) {
+          toggleAt.setDate(toggleAt.getDate() + 1);
+        }
+        toggleAt.setHours(7);
+      } else {
+        toggleAt.setHours(19);
+      }
+
+      toggleAt.setMinutes(0);
+      toggleAt.setSeconds(0);
+      toggleAt.setMilliseconds(0)
+
+      var delay = toggleAt.getTime() - now.getTime();
+
+      // auto toggle theme mode
+      setTimeout(function() {
+        handleThemeToggle(!nightShift);
+      }, delay);
+
+      return {
+        nightShift: nightShift,
+        toggleAt: toggleAt.getTime()
+      };
+    }
+
+    // Listen the theme toggle event
+    sw.addEventListener('change', function(event) {
+      handleThemeToggle(event.target.checked);
+    });
+
+    if (nightModeOption == 'auto') {
+      var data = autoThemeToggle();
+
+      // Toggle theme by local setting
+      if (data.toggleAt > themeData.autoToggleAt) {
+        themeData.autoToggleAt = data.toggleAt;
+        handleThemeToggle(data.nightShift);
+      } else {
+        handleThemeToggle(themeData.nightShift);
+      }
+    } else if (nightModeOption == 'manual') {
+      handleThemeToggle(themeData.nightShift);
+    } else {
+      var nightShift = themeData.nightShift;
+      if (nightShift === undefined) {
+        nightShift = nightModeOption === 'on';
+      }
+      handleThemeToggle(nightShift);
+    }
+  })();
+</script>
+<div id="click-to-top" class="click-to-top">
+  <i class="fa fa-arrow-up"></i>
+</div>
+<script>
+  (function () {
+    const clickToTop = document.getElementById('click-to-top');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 100) {
+        clickToTop.classList.add('show')
+      }else {
+        clickToTop.classList.remove('show')
+      }
+    });
+    clickToTop.addEventListener('click', () => {
+      window.smoothScrollTo(0);
+    });
+  })();
+</script>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <div class="framework">
+  <section class="main">
+
+     <div class="post">
+  <section>
+
+
+
+
+
+
+
+
+
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <div class="post-content e-content" itemprop="articleBody">
+
+    <h2 id="大致经历">大致经历</h2>
+<ol>
+  <li>github仓库创建</li>
+  <li>仓库设置</li>
+  <li>博客网页设置</li>
+  <li>注意事项</li>
+</ol>
+
+<h2 id="1-github仓库创建">1. github仓库创建</h2>
+<p>  主题来源：<a href="http://jekyllthemes.org/">jekyllthemes</a></p>
+
+<p>  我这里使用的是<code class="language-plaintext highlighter-rouge">Yet Another Theme(YAT)</code></p>
+
+<p>  选择合适主题后，通过<code class="language-plaintext highlighter-rouge">Homepage</code>跳转至Github对应仓库（注：<code class="language-plaintext highlighter-rouge">Demo</code>可预览成品效果），Github仓库中点击<code class="language-plaintext highlighter-rouge">Fork</code>克隆到自己的仓库，<code class="language-plaintext highlighter-rouge">Repository name</code>处填写<code class="language-plaintext highlighter-rouge">自己的github用户名</code>+<code class="language-plaintext highlighter-rouge">.github.io</code>即可，随后点击Create fork完成创建。</p>
+
+<h2 id="2-仓库设置">2. 仓库设置</h2>
+<p>  在自己的该项目页面点击<code class="language-plaintext highlighter-rouge">Setting</code>进入设置界面，左侧栏目中选择<code class="language-plaintext highlighter-rouge">Pages</code>页面  ，然后在<code class="language-plaintext highlighter-rouge">Build and deployment</code>栏目下的<code class="language-plaintext highlighter-rouge">Source</code>选项选择<code class="language-plaintext highlighter-rouge">Github Actions</code>,弹出框点击<code class="language-plaintext highlighter-rouge">Configure</code>完成配置。之后点击页面右上角处<code class="language-plaintext highlighter-rouge">Commit changes...</code>将自动生成的YML文件提交。</p>
+
+<p>  上方<code class="language-plaintext highlighter-rouge">actions</code>页面可以查看构建进度，完成后即可通过创建时填写的<code class="language-plaintext highlighter-rouge">自己的github用户名</code>+<code class="language-plaintext highlighter-rouge">.github.io</code>域名进行访问。</p>
+<h2 id="3-博客网页设置">3. 博客网页设置</h2>
+<p>  根目录下<code class="language-plaintext highlighter-rouge">_config.yml</code>文件可进行更改，27-29行处可更改为自己的标题、邮箱和作者。</p>
+
+<p>  <code class="language-plaintext highlighter-rouge">_posts</code>文件夹下为博客文件，由markdown编写。</p>
+
+<p>  <code class="language-plaintext highlighter-rouge">_layout</code>文件夹下为网站页面，可以自由修改美化。</p>
+<h2 id="4-注意事项">4. 注意事项</h2>
+<p>  <strong>主题均为英文主题</strong>，国人使用需注意，若想省去汉化麻烦可克隆博主仓库。</p>
+
+<p>  新手上路在编辑文件后不要心急，重新构建需要时间（我还真不知道会重新构建，刷新网页都没变化，一度怀疑有问题），进度可在<code class="language-plaintext highlighter-rouge">Actions</code>页面下查看。</p>
+
+<p>  <strong>自己汉化重点部分</strong>：网页主页的标题以及副标题部分不完全在<code class="language-plaintext highlighter-rouge">_layouts</code>文件夹下<code class="language-plaintext highlighter-rouge">home.html</code>中更改，主要部分在<code class="language-plaintext highlighter-rouge">_data</code>文件夹下的<code class="language-plaintext highlighter-rouge">defaults.yml</code>文件（一个大坑，改完网页都没变化，找了好久才找到），类似部分有几个但不多，其余部分干扰项较小，容易修改。</p>
+
+
+  </div>
+
+</article><div class="post-nav">
+<span></span><a class="next" href="/jekyll-theme-yat/%E6%95%99%E7%A8%8B/%E5%8D%9A%E5%AE%A2/2024/04/24/gitee%E8%87%AA%E5%8A%A8%E6%9B%B4%E6%96%B0pages.html" title="gitee自动更新pages">gitee自动更新pages</a>
+</div>
+<div class="post-related">
+      <div>相关的文章</div>
+      <ul>
+        <li class="top-post">
+          <a class="post-link" href="/jekyll-theme-yat/%E6%95%99%E7%A8%8B/esp32/%E9%80%82%E5%90%88%E6%96%B0%E6%89%8B/2024/04/28/ESP32-SD%E5%8D%A1%E6%9C%8D%E5%8A%A1%E5%99%A8.html" title="ESP32 SD卡服务器">
+            ESP32 SD卡服务器<span class="post-badges">
+  <span class="post-badge badge-top">火</span>
+  <span class="post-badge badge-new">新</span>
+</span></a>
+        </li>
+<li class="top-post">
+          <a class="post-link" href="/jekyll-theme-yat/%E6%95%99%E7%A8%8B/%E5%8D%9A%E5%AE%A2/2024/04/17/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2%E5%88%9B%E5%BB%BA%E7%BB%8F%E5%8E%86-Github.html" title="我的博客创建经历（github）">
+            我的博客创建经历（github）<span class="post-badges">
+  <span class="post-badge badge-top">火</span>
+  <span class="post-badge badge-new">新</span>
+</span></a>
+        </li>
+<li class="top-post">
+          <a class="post-link" href="/jekyll-theme-yat/%E6%95%99%E7%A8%8B/%E5%8D%9A%E5%AE%A2/2024/04/24/%E5%9B%BD%E5%86%85%E8%AE%BF%E9%97%AE%E5%8D%9A%E5%AE%A2-gitee%E5%90%8C%E6%AD%A5github.html" title="国内访问博客（gitee同步github）">
+            国内访问博客（gitee同步github）<span class="post-badges">
+  <span class="post-badge badge-top">火</span>
+  <span class="post-badge badge-new">新</span>
+</span></a>
+        </li>
+<li class="top-post">
+          <a class="post-link" href="/jekyll-theme-yat/%E9%9A%8F%E8%BA%AB%E7%BD%91%E7%9B%98/%E6%95%99%E7%A8%8B/api%E8%A7%A3%E6%9E%90/2024/06/11/%E9%9A%8F%E8%BA%AB%E7%BD%91%E7%9B%98%E5%90%8E%E7%AB%AFAPI%E8%A7%A3%E6%9E%90.html" title="随身网盘后端API解析">
+            随身网盘后端API解析<span class="post-badges">
+  <span class="post-badge badge-top">火</span>
+  <span class="post-badge badge-new">新</span>
+</span></a>
+        </li>
+</ul>
+    </div>
+<div class="post-comments"></div></section>
+</div>
+
+  </section>
+  <section class="sidebar" style="margin-left: 15px;">
+    <!-- Get sidebar items --></section>
+</div>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/jekyll-theme-yat/%20/"></data>
+
+  <div class="wrapper">
+    <div class="site-footer-inner">
+<div>未出版作品 <span class="copyleft">©</span> 2017-2024 Hehao666</div>
+      <div>主题来源<a title="Jekyll is a simple, blog-aware, static site
+      generator." href="https://jekyllrb.com/">Jekyll</a> &amp; <a title="Yat, yet
+      another theme." href="https://github.com/jeffreytse/jekyll-theme-yat">Yat Theme</a>.</div>
+      <div class="footer-col rss-subscribe">订阅 <a href="/jekyll-theme-yat/%20/feed.xml">via RSS</a>
+</div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="/jekyll-theme-yat/feed.xml" rel="self" type="application/atom+xml" /><link href="/jekyll-theme-yat/" rel="alternate" type="text/html" /><updated>2024-06-11T13:47:28+00:00</updated><id>/jekyll-theme-yat/feed.xml</id><title type="html">HaHa233的博客</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><author><name>Hehao666</name></author><entry><title type="html">ESP32 S3随身网盘</title><link href="/jekyll-theme-yat/%E9%9A%8F%E8%BA%AB%E7%BD%91%E7%9B%98/esp32/%E9%80%82%E5%90%88%E6%96%B0%E6%89%8B/2024/06/11/ESP32-S3%E9%9A%8F%E8%BA%AB%E7%BD%91%E7%9B%98.html" rel="alternate" type="text/html" title="ESP32 S3随身网盘" /><published>2024-06-11T00:00:00+00:00</published><updated>2024-06-11T00:00:00+00:00</updated><id>/jekyll-theme-yat/%E9%9A%8F%E8%BA%AB%E7%BD%91%E7%9B%98/esp32/%E9%80%82%E5%90%88%E6%96%B0%E6%89%8B/2024/06/11/ESP32%20S3%E9%9A%8F%E8%BA%AB%E7%BD%91%E7%9B%98</id><content type="html" xml:base="/jekyll-theme-yat/%E9%9A%8F%E8%BA%AB%E7%BD%91%E7%9B%98/esp32/%E9%80%82%E5%90%88%E6%96%B0%E6%89%8B/2024/06/11/ESP32-S3%E9%9A%8F%E8%BA%AB%E7%BD%91%E7%9B%98.html"><![CDATA[<h2 id="1-项目介绍">1. 项目介绍</h2>
+<p>  ESP32随身网盘项目新成员，芯片升级为SPE32 S3，同时新增2颗LED用作状态显示</p>
+
+<div align="center">
+<img src="/assets/images/2024-6-11/外观.jpg" width="400" />
+</div>
+
+<p>  项目地址（github）：<a href="https://github.com/Hehao666/ESP32S3NetDisk">https://github.com/Hehao666/ESP32S3NetDisk</a></p>
+
+<p>  项目地址（gitee）：<a href="https://gitee.com/haha233jpg/ESP32S3NetDisk">https://gitee.com/haha233jpg/ESP32S3NetDisk</a></p>
+
+<p>  立创EDA开源广场：<a href="https://oshwhub.com/haha233.jpg/esp32-pian-xie-sd-tf-ka-fu-wu-qi_copy_copy_copy">https://oshwhub.com/haha233.jpg/esp32-pian-xie-sd-tf-ka-fu-wu-qi_copy_copy_copy</a></p>
+
+<p>  哔哩哔哩视频地址：<a href="https://www.bilibili.com/video/BV1FJ4m137nA/">https://www.bilibili.com/video/BV1FJ4m137nA/</a></p>
+
+<h2 id="2-新版介绍">2. 新版介绍</h2>
+
+<p>  首发搭载HaOs1.3.9版本，全链路优化，综合体验大涨，从曾经的能用到现在的好用，随身网盘的一小步，HaOs生态的一大步</p>
+
+<p>  <code class="language-plaintext highlighter-rouge">设置界面</code>新增功能<code class="language-plaintext highlighter-rouge">测试设备读写性能</code></p>
+
+<p>同时各页面也有不同程度的调整优化</p>
+
+<p>1、文件总管理</p>
+
+<p>  可以对文件进行打开，下载，重命名，删除操作（部分文件支持在线查看），还有创建文件夹和上传文件。</p>
+<div align="center">
+<img src="/assets/images/2024-6-11/文件总管理.png" width="400" />
+</div>
+
+<p>2、文件快传</p>
+
+<p>  功能与文件总管理一致，目录定向upload方便使用。</p>
+<div align="center">
+<img src="/assets/images/2024-6-11/文件快传.png" width="400" />
+</div>
+
+<p>3、网络配置</p>
+
+<p>  设置开机自连WIFI和热点参数。</p>
+<div align="center">
+<img src="/assets/images/2024-6-11/网络配置.png" width="400" />
+</div>
+
+<p>4、设置</p>
+
+<p>  功能包含修改默认主页、头像、壁纸、固件更新（OTA）和域名前缀修改。</p>
+<div align="center">
+<img src="/assets/images/2024-6-11/设置.png" width="400" />
+</div>
+
+<p>5、私人影院</p>
+
+<p>  可以播放mp4和mov格式H.264编码视频，但缺点是缓存完才能播放，存在一定问题，不推荐使用。</p>
+<div align="center">
+<img src="/assets/images/2024-6-11/私人影院.png" width="400" />
+</div>
+
+<p>6、剪切板</p>
+
+<p>  文件路径为<code class="language-plaintext highlighter-rouge">/配置/copy.txt</code>，这里提供快捷操作，多设备共享文本链接。</p>
+<div align="center">
+<img src="/assets/images/2024-6-11/剪切板.png" width="400" />
+</div>
+
+<p>7、网页游戏</p>
+
+<p>  可以在线运行html和flash游戏。</p>
+<div align="center">
+<img src="/assets/images/2024-6-11/网页游戏.png" width="400" />
+</div>
+
+<p>8、音乐播放</p>
+
+<p>  可以播放本地音乐，与视频不同，缓冲一部分即可播放。</p>
+<div align="center">
+<img src="/assets/images/2024-6-11/音乐播放.png" width="400" />
+</div>]]></content><author><name>haha233jpg</name></author><category term="随身网盘" /><category term="ESP32" /><category term="适合新手" /><category term="随身网盘" /><category term="ESP32" /><category term="适合新手" /><summary type="html"><![CDATA[1. 项目介绍   ESP32随身网盘项目新成员，芯片升级为SPE32 S3，同时新增2颗LED用作状态显示]]></summary></entry><entry><title type="html">随身网盘后端API解析</title><link href="/jekyll-theme-yat/%E9%9A%8F%E8%BA%AB%E7%BD%91%E7%9B%98/%E6%95%99%E7%A8%8B/api%E8%A7%A3%E6%9E%90/2024/06/11/%E9%9A%8F%E8%BA%AB%E7%BD%91%E7%9B%98%E5%90%8E%E7%AB%AFAPI%E8%A7%A3%E6%9E%90.html" rel="alternate" type="text/html" title="随身网盘后端API解析" /><published>2024-06-11T00:00:00+00:00</published><updated>2024-06-11T00:00:00+00:00</updated><id>/jekyll-theme-yat/%E9%9A%8F%E8%BA%AB%E7%BD%91%E7%9B%98/%E6%95%99%E7%A8%8B/api%E8%A7%A3%E6%9E%90/2024/06/11/%E9%9A%8F%E8%BA%AB%E7%BD%91%E7%9B%98%E5%90%8E%E7%AB%AFAPI%E8%A7%A3%E6%9E%90</id><content type="html" xml:base="/jekyll-theme-yat/%E9%9A%8F%E8%BA%AB%E7%BD%91%E7%9B%98/%E6%95%99%E7%A8%8B/api%E8%A7%A3%E6%9E%90/2024/06/11/%E9%9A%8F%E8%BA%AB%E7%BD%91%E7%9B%98%E5%90%8E%E7%AB%AFAPI%E8%A7%A3%E6%9E%90.html"><![CDATA[<h2 id="1-api目录">1. API目录</h2>
+<p>  目前项目后端API共计25+3+1+1条，所有APi如下：<br />
+<code class="language-plaintext highlighter-rouge">/configWifi</code>:保存wifi<br />
+<code class="language-plaintext highlighter-rouge">/gamelist</code>:列出游戏列表<br />
+<code class="language-plaintext highlighter-rouge">/backRoot</code>:回到根目录<br />
+<code class="language-plaintext highlighter-rouge">/lookthis</code>:进入文件夹<br />
+<code class="language-plaintext highlighter-rouge">/uploadaddFold</code>:upload创建文件夹<br />
+<code class="language-plaintext highlighter-rouge">/renameFile</code>:重命名<br />
+<code class="language-plaintext highlighter-rouge">/deleteUploadFile</code>:删除文件<br />
+<code class="language-plaintext highlighter-rouge">/listaudio</code>:列出音乐列表<br />
+<code class="language-plaintext highlighter-rouge">/edittxt</code>:编辑txt文件<br />
+<code class="language-plaintext highlighter-rouge">/modify</code>:修改文件<br />
+<code class="language-plaintext highlighter-rouge">/wificonnect</code>:模式转换<br />
+<code class="language-plaintext highlighter-rouge">/get_version</code>:显示默认主页、版本、域名前缀、网络提供和设备IP<br />
+<code class="language-plaintext highlighter-rouge">/get_storage</code>:显示内存<br />
+<code class="language-plaintext highlighter-rouge">/get_wifi</code>:显示wifi和热点<br />
+<code class="language-plaintext highlighter-rouge">/get_video</code>:显示视频列表<br />
+<code class="language-plaintext highlighter-rouge">/get_RootFile</code>:显示根目录<br />
+<code class="language-plaintext highlighter-rouge">/get_quickFile</code>:显示上传目录<br />
+<code class="language-plaintext highlighter-rouge">/get_File</code>:显示当前文件夹<br />
+<code class="language-plaintext highlighter-rouge">/configFile</code>:修改配置文件<br />
+<code class="language-plaintext highlighter-rouge">/nameText</code>:配置wifi<br />
+<code class="language-plaintext highlighter-rouge">/addWifi</code>:增加自连wifi<br />
+<code class="language-plaintext highlighter-rouge">/deduceWifi</code>:减少自连wifi<br />
+<code class="language-plaintext highlighter-rouge">/backone</code>:上一级<br />
+<code class="language-plaintext highlighter-rouge">/configAP</code>:配置热点<br />
+<code class="language-plaintext highlighter-rouge">/FirstWeb</code>:配置主页<br />
+<code class="language-plaintext highlighter-rouge">/testFileIO</code>:测试读写<br />
+<code class="language-plaintext highlighter-rouge">/get_FirstWebis</code>:默认主页</p>
+
+<p><code class="language-plaintext highlighter-rouge">/upload</code>:文件快传的文件上传<br />
+<code class="language-plaintext highlighter-rouge">/uploadAll</code>:文件总管理的文件上传<br />
+<code class="language-plaintext highlighter-rouge">/set</code>:设置界面上传头像和壁纸</p>
+
+<p><code class="language-plaintext highlighter-rouge">/update</code>:OTA</p>
+
+<p><code class="language-plaintext highlighter-rouge">onNotFound</code>:非以上指定的默认操作</p>
+
+<h2 id="2-后端接口程序">2. 后端接口程序</h2>
+<pre><code class="language-Cpp">void esp32ServerOn(){
+  esp32_server.onNotFound(handleUserRequet);      // 告知系统如何处理用户请求
+  esp32_server.on("/configWifi",HTTP_GET, configWIFI);   //保存wifi
+  esp32_server.on("/gamelist", HTTP_GET, listGame);   //列出游戏列表
+  esp32_server.on("/upload",   // 如果客户端通过upload页面
+          HTTP_POST,        // 向服务器发送文件(请求方法POST)
+          respondOK,        // 则回复状态码 200 给客户端
+          handleFileUploadAll);// 并且运行处理文件上传函数
+  esp32_server.on("/uploadAll",   // 如果客户端通过allFile页面
+          HTTP_POST,        // 向服务器发送文件(请求方法POST)
+          respondOK,        // 则回复状态码 200 给客户端
+          handleFileUploadAll);// 并且运行处理文件上传函数
+  esp32_server.on("/set",   // 如果客户端通过set页面
+          HTTP_POST,        // 向服务器发送文件(请求方法POST)
+          respondOK,        // 则回复状态码 200 给客户端
+          handleFileset);// 并且运行处理文件上传函数
+  esp32_server.on("/backRoot", HTTP_GET, backRoot);   //回到根目录
+  esp32_server.on("/lookthis", HTTP_GET, lookthisFile);   //进入文件夹
+  esp32_server.on("/uploadaddFold", HTTP_GET, uploadaddFold);   //upload创建文件夹
+  esp32_server.on("/renameFile", HTTP_GET, renameFile);   //重命名
+  esp32_server.on("/deleteUploadFile", HTTP_GET, deleteUploadFile);   //删除文件
+  esp32_server.on("/listaudio", HTTP_GET, listaudio);    //列出音乐列表
+  esp32_server.on("/edittxt",HTTP_GET,editTxt);   //编辑txt文件
+  esp32_server.on("/modify",HTTP_GET,modify);   //修改文件
+  esp32_server.on("/wificonnect",changemode);   //模式转换
+  esp32_server.on("/get_version", setversion); //显示默认主页、版本、域名前缀、网络提供和设备IP
+  esp32_server.on("/get_storage", getStorage); //显示内存
+  esp32_server.on("/get_wifi", getWifi); //显示wifi和热点
+  esp32_server.on("/get_video", getVideo); //显示视频列表
+  esp32_server.on("/get_RootFile", getRootFile); //显示根目录
+  esp32_server.on("/get_quickFile", getQuickFile); //显示上传目录
+  esp32_server.on("/get_File", handleGetFiles); //显示当前文件夹
+  esp32_server.on("/configFile",HTTP_GET, configFile); //修改配置文件
+  esp32_server.on("/nameText",HTTP_GET, nameText); //配置wifi
+  esp32_server.on("/addWifi",HTTP_GET, addWifi); //增加自连wifi
+  esp32_server.on("/deduceWifi",HTTP_GET, deduceWifi); //减少自连wifi
+  esp32_server.on("/backone",HTTP_GET, backone); //上一级
+  esp32_server.on("/configAP", configAP);         //配置热点
+  esp32_server.on("/FirstWeb", FirstWeb);         //配置主页
+  esp32_server.on("/testFileIO", testFile);         //测试读写
+  esp32_server.on("/get_FirstWebis", FirstWebsend);         //默认主页
+  
+  //OTA
+  esp32_server.on(
+    "/update", HTTP_POST, []()
+    {
+    esp32_server.sendHeader("Connection", "close");
+    esp32_server.send(200, "text/plain", (Update.hasError()) ? "FAIL" : "OK");
+    ESP.restart(); },
+    []()
+    {
+      HTTPUpload &amp;upload = esp32_server.upload();
+      if (upload.status == UPLOAD_FILE_START)
+      {
+        Serial.printf("Update: %s\n", upload.filename.c_str());
+        if (!Update.begin(UPDATE_SIZE_UNKNOWN))
+        { // start with max available size
+          Update.printError(Serial);
+        }
+      }
+      else if (upload.status == UPLOAD_FILE_WRITE)
+      {
+        /* flashing firmware to ESP*/
+        if (Update.write(upload.buf, upload.currentSize) != upload.currentSize)
+        {
+          Update.printError(Serial);
+        }
+      }
+      else if (upload.status == UPLOAD_FILE_END)
+      {
+        if (Update.end(true))
+        { // true to set the size to the current progress
+          esp32_server.send(200,"text/html","");
+          Serial.printf("Update Success: %u\nRebooting...\n", upload.totalSize);
+        }
+        else
+        {
+          Update.printError(Serial);
+        }
+      }
+    });
+
+  esp32_server.begin();                           // 启动网站服务
+  MDNS.addService("http", "tcp", 80);  
+  Serial.println("mDNS responder started");
+  Serial.println("HTTP server started");
+}
+</code></pre>
+
+<h2 id="3数据格式">3.数据格式</h2>]]></content><author><name>haha233jpg</name></author><category term="随身网盘" /><category term="教程" /><category term="API解析" /><category term="随身网盘" /><category term="教程" /><category term="API解析" /><summary type="html"><![CDATA[1. API目录   目前项目后端API共计25+3+1+1条，所有APi如下： /configWifi:保存wifi /gamelist:列出游戏列表 /backRoot:回到根目录 /lookthis:进入文件夹 /uploadaddFold:upload创建文件夹 /renameFile:重命名 /deleteUploadFile:删除文件 /listaudio:列出音乐列表 /edittxt:编辑txt文件 /modify:修改文件 /wificonnect:模式转换 /get_version:显示默认主页、版本、域名前缀、网络提供和设备IP /get_storage:显示内存 /get_wifi:显示wifi和热点 /get_video:显示视频列表 /get_RootFile:显示根目录 /get_quickFile:显示上传目录 /get_File:显示当前文件夹 /configFile:修改配置文件 /nameText:配置wifi /addWifi:增加自连wifi /deduceWifi:减少自连wifi /backone:上一级 /configAP:配置热点 /FirstWeb:配置主页 /testFileIO:测试读写 /get_FirstWebis:默认主页]]></summary></entry><entry><title type="html">ESP32随身网盘1.3版本</title><link href="/jekyll-theme-yat/%E9%9A%8F%E8%BA%AB%E7%BD%91%E7%9B%98/esp32/%E9%80%82%E5%90%88%E6%96%B0%E6%89%8B/2024/05/30/ESP32%E9%9A%8F%E8%BA%AB%E7%BD%91%E7%9B%981.3%E7%89%88%E6%9C%AC.html" rel="alternate" type="text/html" title="ESP32随身网盘1.3版本" /><published>2024-05-30T00:00:00+00:00</published><updated>2024-05-30T00:00:00+00:00</updated><id>/jekyll-theme-yat/%E9%9A%8F%E8%BA%AB%E7%BD%91%E7%9B%98/esp32/%E9%80%82%E5%90%88%E6%96%B0%E6%89%8B/2024/05/30/ESP32%E9%9A%8F%E8%BA%AB%E7%BD%91%E7%9B%981.3%E7%89%88%E6%9C%AC</id><content type="html" xml:base="/jekyll-theme-yat/%E9%9A%8F%E8%BA%AB%E7%BD%91%E7%9B%98/esp32/%E9%80%82%E5%90%88%E6%96%B0%E6%89%8B/2024/05/30/ESP32%E9%9A%8F%E8%BA%AB%E7%BD%91%E7%9B%981.3%E7%89%88%E6%9C%AC.html"><![CDATA[<h2 id="1-版本介绍">1. 版本介绍</h2>
+<p>  1.3版本注重软件修改，在上一版的基础上优化UI，前后端分离，体验大增。</p>
+
+<p>  项目地址（github）：<a href="https://github.com/Hehao666/esp32SDCard/tree/main">https://github.com/Hehao666/esp32SDCard/tree/main</a></p>
+
+<p>  项目地址（gitee）：<a href="https://gitee.com/haha233jpg/esp32-sdcard">https://gitee.com/haha233jpg/esp32-sdcard</a></p>
+
+<p>  立创EDA开源广场：<a href="https://oshwhub.com/haha233.jpg/backupprojects_haha233-jpg_personal_0_20240427">https://oshwhub.com/haha233.jpg/backupprojects_haha233-jpg_personal_0_20240427</a></p>
+
+<p>  哔哩哔哩视频地址：<a href="https://www.bilibili.com/video/BV1Pw4m1X751/?share_source=copy_web&amp;vd_source=56efb7e45102ec59491d4ff5ddfdc196">https://www.bilibili.com/video/BV1Pw4m1X751/?share_source=copy_web&amp;vd_source=56efb7e45102ec59491d4ff5ddfdc196</a></p>
+
+<p>  哔哩哔哩视频地址（进阶教程）：<a href="https://www.bilibili.com/video/BV1Aw4m1X7CM/?share_source=copy_web&amp;vd_source=56efb7e45102ec59491d4ff5ddfdc196">https://www.bilibili.com/video/BV1Aw4m1X7CM/?share_source=copy_web&amp;vd_source=56efb7e45102ec59491d4ff5ddfdc196</a></p>
+
+<p>  哔哩哔哩视频地址（1.3版本）：<a href="https://www.bilibili.com/video/BV1Vi421S7QR/?share_source=copy_web&amp;vd_source=56efb7e45102ec59491d4ff5ddfdc196">https://www.bilibili.com/video/BV1Vi421S7QR/?share_source=copy_web&amp;vd_source=56efb7e45102ec59491d4ff5ddfdc196</a></p>
+
+<h2 id="2-软件介绍">2. 软件介绍</h2>
+
+<p>1、文件总管理</p>
+
+<p>  可以对文件进行打开，下载，重命名，删除操作（部分文件支持在线查看），还有创建文件夹和上传文件。</p>
+<div align="center">
+<img src="/assets/images/2024-5-30/文件总管理.png" width="400" />
+</div>
+
+<p>2、文件快传</p>
+
+<p>  功能与文件总管理一致，目录定向upload方便使用。</p>
+<div align="center">
+<img src="/assets/images/2024-5-30/文件快传.png" width="400" />
+</div>
+
+<p>3、网络配置</p>
+
+<p>  设置开机自连WIFI和热点参数。</p>
+<div align="center">
+<img src="/assets/images/2024-5-30/网络配置.png" width="400" />
+</div>
+
+<p>4、设置</p>
+
+<p>  功能包含修改默认主页、头像、壁纸、固件更新（OTA）和域名前缀修改。</p>
+<div align="center">
+<img src="/assets/images/2024-5-30/设置.png" width="400" />
+</div>
+
+<p>5、私人影院</p>
+
+<p>  可以播放mp4和mov格式H.264编码视频，但缺点是缓存完才能播放。</p>
+<div align="center">
+<img src="/assets/images/2024-5-30/私人影院.png" width="400" />
+</div>
+
+<p>6、剪切板</p>
+
+<p>  文件路径为<code class="language-plaintext highlighter-rouge">/config/copy.txt</code>，这里提供快捷操作，多设备共享文本链接。</p>
+<div align="center">
+<img src="/assets/images/2024-5-30/剪切板.png" width="400" />
+</div>
+
+<p>7、网页游戏</p>
+
+<p>  可以在线运行html和flash游戏。</p>
+<div align="center">
+<img src="/assets/images/2024-5-30/网页游戏.png" width="400" />
+</div>
+
+<p>8、音乐播放</p>
+
+<p>  可以播放本地音乐，与视频不同，缓冲一部分即可播放。</p>
+<div align="center">
+<img src="/assets/images/2024-5-30/音乐播放.png" width="400" />
+</div>
+
+<h2 id="3-使用指南">3. 使用指南</h2>
+<p>  内存卡数据的config文件夹中的<code class="language-plaintext highlighter-rouge">config.txt</code>文件<code class="language-plaintext highlighter-rouge">hostName</code>对应我们的域名前缀，修改这里即可修改后台网址。我们可以在内存卡写入数据时修改，或者进入后台后在设置界面修改。默认使用<code class="language-plaintext highlighter-rouge">esp32.local</code>进入后台，后缀<code class="language-plaintext highlighter-rouge">local</code>固定不变。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>autoWifinum=1
+wifiConnectTime=500
+CPUFfrequency=80
+hostName=esp32
+FirstWebis=1
+</code></pre></div></div>
+
+<p>  进入后台后建议第一时间添加开机自连WIFI,可设置多个，第一个为最常用WIFI,最后一个为手机热点，方便使用。</p>
+
+<p>  根目录下的<code class="language-plaintext highlighter-rouge">system</code>和<code class="language-plaintext highlighter-rouge">config</code>文件夹存放系统文件，不建议修改。</p>
+
+<p>  esp32硬件性能不强，页面加载需要等待，同时在进行一个操作时不要立即进行第二个操作，会无法响应。例如下载文件时，无法响应其他任何操作。</p>
+
+<h2 id="4-进阶指南">4. 进阶指南</h2>
+<p>  <code class="language-plaintext highlighter-rouge">config</code>文件夹下<br />
+    <code class="language-plaintext highlighter-rouge">background.jpg</code>对应我们的背景图片<br />
+    <code class="language-plaintext highlighter-rouge">logo.jpg</code>对应我们的头像<br />
+    <code class="language-plaintext highlighter-rouge">mywifi.txt</code>存放我们的wifi名称和密码<br />
+    <code class="language-plaintext highlighter-rouge">password.txt</code>存放热点相关信息<br />
+    <code class="language-plaintext highlighter-rouge">copy.txt</code>是我们的剪切板打开文件<br />
+    <code class="language-plaintext highlighter-rouge">config.txt</code>是系统配置文件<br />
+  <code class="language-plaintext highlighter-rouge">config.txt</code>文件中
+    <code class="language-plaintext highlighter-rouge">autoWifinum</code>对应我们的开机自连WIFI数量<br />
+    <code class="language-plaintext highlighter-rouge">wifiConnectTime</code>对应单个WIFI连接最长时间<br />
+    <code class="language-plaintext highlighter-rouge">CPUFfrequency</code>对应CPU运行频率<br />
+    <code class="language-plaintext highlighter-rouge">hostName</code>对应域名前缀<br />
+    <code class="language-plaintext highlighter-rouge">FirstWebis</code>对应默认主页，顺序与设置界面<code class="language-plaintext highlighter-rouge">默认主页</code>下拉菜单顺序对应</p>]]></content><author><name>haha233jpg</name></author><category term="随身网盘" /><category term="ESP32" /><category term="适合新手" /><category term="随身网盘" /><category term="ESP32" /><category term="适合新手" /><summary type="html"><![CDATA[1. 版本介绍   1.3版本注重软件修改，在上一版的基础上优化UI，前后端分离，体验大增。]]></summary></entry><entry><title type="html">ESP32 SD卡服务器</title><link href="/jekyll-theme-yat/%E6%95%99%E7%A8%8B/esp32/%E9%80%82%E5%90%88%E6%96%B0%E6%89%8B/2024/04/28/ESP32-SD%E5%8D%A1%E6%9C%8D%E5%8A%A1%E5%99%A8.html" rel="alternate" type="text/html" title="ESP32 SD卡服务器" /><published>2024-04-28T00:00:00+00:00</published><updated>2024-04-28T00:00:00+00:00</updated><id>/jekyll-theme-yat/%E6%95%99%E7%A8%8B/esp32/%E9%80%82%E5%90%88%E6%96%B0%E6%89%8B/2024/04/28/ESP32%20SD%E5%8D%A1%E6%9C%8D%E5%8A%A1%E5%99%A8</id><content type="html" xml:base="/jekyll-theme-yat/%E6%95%99%E7%A8%8B/esp32/%E9%80%82%E5%90%88%E6%96%B0%E6%89%8B/2024/04/28/ESP32-SD%E5%8D%A1%E6%9C%8D%E5%8A%A1%E5%99%A8.html"><![CDATA[<h2 id="1-项目介绍">1. 项目介绍</h2>
+<p>  受B站大佬启发，兴趣使然，期望制作出一款功能丰富的小体积便携服务器，此服务器受硬件限制，读写速度较慢，在500KB以下，故不期望代替U盘类存储设备，同时由于使用库函数限制，TF卡大小限制为32G(FAT32)，不过支持中文（部分支持，如上传下载）。同时ESP32-P4（还未推出）目测性能强悍，功能丰富，后期预计会推出升级版采用P4芯片。目前<strong>本项目成本在20以内</strong>，esp32本人是花费9元（第三方买的，官方的真的贵，买不起），其他小元件最多算2元吧，外壳嘉立创报价4.77，运费5元，支付宝手续费0.03，外壳如果自己有设备相信成本极低。32GTF卡本人花费20好几，但感觉TF卡可以不算进本项目吧，毕竟TF卡用途很广，另作他用也没有问题，有多余的甚至不需要购买。</p>
+
+<p>  项目地址（github）：<a href="https://github.com/Hehao666/esp32SDCard/tree/main">https://github.com/Hehao666/esp32SDCard/tree/main</a></p>
+
+<p>  项目地址（gitee）：<a href="https://gitee.com/haha233jpg/esp32-sdcard">https://gitee.com/haha233jpg/esp32-sdcard</a></p>
+
+<p>  立创EDA开源广场：<a href="https://oshwhub.com/haha233.jpg/backupprojects_haha233-jpg_personal_0_20240427">https://oshwhub.com/haha233.jpg/backupprojects_haha233-jpg_personal_0_20240427</a></p>
+
+<p>  哔哩哔哩视频地址：<a href="https://www.bilibili.com/video/BV1Pw4m1X751/?share_source=copy_web&amp;vd_source=56efb7e45102ec59491d4ff5ddfdc196">https://www.bilibili.com/video/BV1Pw4m1X751/?share_source=copy_web&amp;vd_source=56efb7e45102ec59491d4ff5ddfdc196</a></p>
+
+<p>  哔哩哔哩视频地址（进阶教程）：<a href="https://www.bilibili.com/video/BV1Aw4m1X7CM/?share_source=copy_web&amp;vd_source=56efb7e45102ec59491d4ff5ddfdc196">https://www.bilibili.com/video/BV1Aw4m1X7CM/?share_source=copy_web&amp;vd_source=56efb7e45102ec59491d4ff5ddfdc196</a></p>
+
+<p>  电路板尺寸为22*30*1.6mm，包含外壳的整体尺寸为4*3(3.1)*1.18cm，非常小巧精悍，同时在c口部分做了下凹设计，方便插拔。<br />
+<img src="/assets/images/2024-5-14/成品外观.jpg" alt="成品外观 图片" /></p>
+<h2 id="2-硬件介绍">2. 硬件介绍</h2>
+<p>    <font size="5">**硬件选择:**</font></p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">处理器</th>
+      <th style="text-align: center">电源管理芯片</th>
+      <th style="text-align: center">电源接口</th>
+      <th style="text-align: center">存储</th>
+      <th style="text-align: center">其他（可不焊接）</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">ESP32-WROOM-32</td>
+      <td style="text-align: center">AMS1117-3.3V</td>
+      <td style="text-align: center">Type-C-6Pin</td>
+      <td style="text-align: center">TF卡座（32GTF卡）</td>
+      <td style="text-align: center">2.54x5排插、M2螺丝（长1cm）及其对应螺帽和NFC贴纸（直径25mm）</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>    <font size="5">**引脚部分:**</font></p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">ESP32</th>
+      <th style="text-align: center">TF卡座</th>
+      <th style="text-align: center">2.54x5排插</th>
+      <th style="text-align: center">其他</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">IO2</td>
+      <td style="text-align: center">DAT0</td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center">IO14</td>
+      <td style="text-align: center">CLK</td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center">IO15</td>
+      <td style="text-align: center">CMD</td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center">IO16</td>
+      <td style="text-align: center">CD</td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: center">3V3</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">IO0</td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">2</td>
+      <td style="text-align: center"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center">TXD0</td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">3</td>
+      <td style="text-align: center"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center">RXD0</td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">4</td>
+      <td style="text-align: center"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">5</td>
+      <td style="text-align: center">GND</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>  Type-C可以看到选择了6Pin，最开始设计其实是全功能c口，但考虑到体积和<strong>成本</strong>（省了个CH340，6脚也便宜点），同时程序也不需要频繁下载，最后采用引出下载引脚的方式（我才不会说是c口引脚太多焊不上才换的😋），6脚还有一点好处，可以不用担心中毒，因为压根就没数据线，病毒跑不进来✔️。<br />
+  AMS1117这个芯片真的简单方便又实惠，缺点是发热大了点，淘宝4毛一个大就大吧，同时我这个东西功耗也确实不高，用这个也挺好，买的是3.3V的版本就只需要外接2个电容就能正常使用，好东西真省事。<br />
+  我这里其实还加了一个0.3mm单面背胶的散热硅胶片，但是感觉散热作用不大没有写上（无背胶应该可以上0.6mm,不过没有测试，理论可行），不过这里发现了另一种用途，硅胶片有一定粘性，可以帮助固定板子，不容易晃动，推荐使用。<br />
+  NFC是淘宝购买的小米碰碰贴215，直径25mm，换成其他尺寸较大的可能放不下，需要粘到外壳表面，目前是内置在外壳下面，表面是送的贴纸。</p>
+
+<h2 id="3-软件功能介绍">3. 软件功能介绍</h2>
+<p>  <strong>功能包含</strong>：文件总管理，文件快传，开机自连WIFI，网页游戏，在线影院，剪切板，模式转换，设置（含OTA，域名前缀修改）<br />
+<img src="/assets/images/2024-5-14/主页.png" alt="主页 图片" /> <br />
+  <strong>主推功能</strong>：文件总管理，设置（含OTA，域名前缀修改），开机自连WIFI</p>
+
+<p>  <strong>文件总管理</strong>：功能包含新建文件夹、文件下载、文件批量上传、访问TF卡内各级目录，删除(批量删除)、重命名以及<strong>在线编辑TXT和HTML文件</strong>，该功能旨在使该设备脱离读卡器完全管理TF卡，免去插拔以及频繁更换设备的烦恼。
+<img src="/assets/images/2024-5-14/文件总管理.png" alt="文件总管理 图片" /> <br />
+  <strong>文件快传</strong>：该功能为文件总管理青春版，精简部分功能，跳转至上传文件夹，方便新手使用。
+<img src="/assets/images/2024-5-14/文件快传.png" alt="文件快传 图片" /> <br />
+  <strong>设置</strong>：设置界面可以更改头像、背景和网页样式（需要有一定能力，自己制作后替换）。以及查看当前固件版本号，在线OTA升级系统固件（本地上传固件包，同时需要能联网，意思是需要STA模式，AP不行。感觉弄个服务器放固件包，然后检查更新自己升级更方便，但是服务器搞不起，第三方服务怕不稳定，还是自己上传算了）。最后是域名前缀修改，我们可以修改成自己喜欢的域名（长度需要小于19），重启后生效，同时也需要注意将nfc重新写入。
+<img src="/assets/images/2024-5-14/设置.png" alt="设置 图片" /> <br />
+  <strong>开机自连WIFI</strong>：可以存储多个WIFI信息，开机后依次自动连接，均未连接上则开启AP模式。可以设置单个WIFI最长连接时间，连接的WIFI数量（下限1，上限9）。
+<img src="/assets/images/2024-5-14/开机自连WIFI.png" alt="开机自连WIFI 图片" /></p>
+<h2 id="4-制作流程">4. 制作流程</h2>
+<ol>
+  <li>通过<strong>嘉立创</strong>下单电路板，购买<strong>BOM表</strong>上所需零件，下单3d打印外壳和nfc贴纸，下载好程序代码（Arduino）。（不包括各种工具，需自备）</li>
+  <li>电路板上<strong>焊接</strong>元件，最好先焊接esp32部分，连接串口测试功能，正常后焊接外围部分。</li>
+  <li>组装外壳，M2螺丝及其对应螺帽*3个，nfc贴纸1张（手机上下载<strong>NFC标签助手</strong>），通过<strong>NFC标签助手</strong>写入URL(<code class="language-plaintext highlighter-rouge">http://esp32.local/</code>)后贴在下壳内侧。</li>
+  <li>接通电源，第一次使用需要稍作等待，连接上该设备的热点（HAHASDCARD,默认密码333444555），连接后手机开启NFC碰一碰贴纸即可进入后台,或者浏览器输入<code class="language-plaintext highlighter-rouge">esp32.local/</code>进入后台。</li>
+</ol>
+
+<h2 id="5-使用技巧">5. 使用技巧</h2>
+<p>  很多功能已经尽可能开放，也希望有充足的DIY空间，但有部分操作因为大大小小的问题不好直接给出。在根目录下的<code class="language-plaintext highlighter-rouge">config.txt</code>文件中可以看到最后3行并没有给出快捷s设置。<code class="language-plaintext highlighter-rouge">CPUFfrequency</code>是设置CPU的运行频率（别问我为什么多了一个f，输错了，程序烧了不想改了，好几个送了朋友，要改是真的麻烦），这里设置80算低频了，主要是发热的考虑，可以自行改为240，觉得烫再改回来，其他挡位没有测试，出事概不负责（所以我没有把这个选项放到设置界面）。<code class="language-plaintext highlighter-rouge">gameWidth</code>和<code class="language-plaintext highlighter-rouge">gameHeight</code>分别是flash游戏的窗口宽度和高度（主要觉得没多少人用，懒得拿出来）。<strong>最后注意这两项修改后需要重启才能生效</strong>。</p>
+
+<h2 id="6-注意事项">6. 注意事项</h2>
+<p>  焊接外围部分时需<strong>注意</strong>：R5和R8必须在下载程序后焊接，<strong>因为这两个电阻连接的是下载相关引脚</strong>，其中R5可以不进行焊接。<br />
+  <strong>电源问题</strong>：</p>
+<ol>
+  <li>该设备没有设计指示灯，接通电源后无法知道是否启动，只能自己看着办，同时6脚C口焊接时需要注意不要虚焊，不然只能单面使用。</li>
+  <li>AMS1117的输出端应该使用钽电容，如果是陶瓷电容容易产生更大的电压波动，但个人使用看来陶瓷电容也可以（可能负载真的很小，毕竟没接什么） ，没出现什么明显问题。</li>
+</ol>
+
+<p>  <strong>不成熟的小技巧</strong>：最开始的时候可以看到，2.54排插可以不用焊接，亲测连接好转串后把排插斜向插入，确保接触良好即可下载程序（损失了巨多之后发现的，亏麻了）。<br />
+  <strong>使用须知</strong>：网页视频功能需要注意，单片机发热较大会导致卡死，不推荐拿来看视频，同时也注意频繁读写文件。由于该设备速度较慢，推荐存储文件在几M的大小，几十M算作上限。（可以期待esp32 P4,暂不清楚读写能力）<br />
+  上传各级页面需要注意，不能在当前页面上传当前页面的文件。</p>
+
+<h2 id="7-未来计划">7. 未来计划</h2>
+<p>  本项目会不定期地长期更新，期望将界面优化成阿里网盘那样的（感觉很高级，用起来也会很有感觉），同时该项目也将改名为<strong>ESP32随身网盘</strong>，硬件和软件方面存在不少升级点，值得期待。</p>
+<ol>
+  <li><strong>硬件上</strong>增加2颗单片机控制的LED灯用作状态显示，开机2颗点亮，进入STA模式亮一颗，AP模式亮另一颗，没上电熄灭。（原本计划采用0.96寸OLED，考虑到成本以及实用性放弃，主要是域名和nfc贴纸的解决从而导致不需要使用屏幕显示ip进入后台），拟增加一个c口的公口，方便没有数据线使用，同时布局也要好好规划，这一版本可以看到螺柱并没有穿过电路板（其实是考虑不周），导致固定没那么稳妥，体积也大上了一圈。</li>
+  <li><strong>软件上</strong>拟采用<code class="language-plaintext highlighter-rouge">SdFat</code>库（现在是官方的<code class="language-plaintext highlighter-rouge">FS</code>库，不支持32G以上及中文）兼容大容量的TF卡的同时完美支持中文（现版本兼容性还是存在一定的不足）。<code class="language-plaintext highlighter-rouge">WebServer</code>库也将替换为<code class="language-plaintext highlighter-rouge">AsyncWebServer</code>库，采用异步的方式运行（同步意味着当前页面不加载完不会加载下一个界面），以及一些常规优化提升使用体验。</li>
+</ol>]]></content><author><name>haha233jpg</name></author><category term="教程" /><category term="ESP32" /><category term="适合新手" /><category term="教程" /><category term="ESP32" /><category term="适合新手" /><summary type="html"><![CDATA[1. 项目介绍   受B站大佬启发，兴趣使然，期望制作出一款功能丰富的小体积便携服务器，此服务器受硬件限制，读写速度较慢，在500KB以下，故不期望代替U盘类存储设备，同时由于使用库函数限制，TF卡大小限制为32G(FAT32)，不过支持中文（部分支持，如上传下载）。同时ESP32-P4（还未推出）目测性能强悍，功能丰富，后期预计会推出升级版采用P4芯片。目前本项目成本在20以内，esp32本人是花费9元（第三方买的，官方的真的贵，买不起），其他小元件最多算2元吧，外壳嘉立创报价4.77，运费5元，支付宝手续费0.03，外壳如果自己有设备相信成本极低。32GTF卡本人花费20好几，但感觉TF卡可以不算进本项目吧，毕竟TF卡用途很广，另作他用也没有问题，有多余的甚至不需要购买。]]></summary></entry><entry><title type="html">gitee自动更新pages</title><link href="/jekyll-theme-yat/%E6%95%99%E7%A8%8B/%E5%8D%9A%E5%AE%A2/2024/04/24/gitee%E8%87%AA%E5%8A%A8%E6%9B%B4%E6%96%B0pages.html" rel="alternate" type="text/html" title="gitee自动更新pages" /><published>2024-04-24T00:00:00+00:00</published><updated>2024-04-24T00:00:00+00:00</updated><id>/jekyll-theme-yat/%E6%95%99%E7%A8%8B/%E5%8D%9A%E5%AE%A2/2024/04/24/gitee%E8%87%AA%E5%8A%A8%E6%9B%B4%E6%96%B0pages</id><content type="html" xml:base="/jekyll-theme-yat/%E6%95%99%E7%A8%8B/%E5%8D%9A%E5%AE%A2/2024/04/24/gitee%E8%87%AA%E5%8A%A8%E6%9B%B4%E6%96%B0pages.html"><![CDATA[<h2 id="1-gitee仓库创建">1. gitee仓库创建</h2>
+<p>  使用大佬仓库<a href="https://gitee.com/yanglbme/gitee-pages-action">ylb/gitee-pages-action</a>完成自动更新Gitee Pages，网上教程大部分时间跨度太长，不适用于现在的环境，故此篇教程从0开始辅导小白完成该项目。</p>
+
+<p>  首先来到我们github的被gitee同步的仓库，在<code class="language-plaintext highlighter-rouge">.github/workflows</code>下创建一个文件，这里命名为<code class="language-plaintext highlighter-rouge">sync.yml</code>，接着可将大佬<code class="language-plaintext highlighter-rouge">Readme</code>下的代码部分复制到刚创建的<code class="language-plaintext highlighter-rouge">sync.yml</code>中保存。
+<img src="/assets/images/2024-4-24/同步代码.png" alt="新建仓库 图片" />
+  如果是跟着我前两篇教程走到现在的朋友，可以精简掉大部分代码，仅保留这一部分，删除的一部分是自动同步github的代码到gitee，这部分功能已经完成，无需再进行配置。</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>name: Sync
+on:
+  push:
+    branches: ["master"]
+    workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Build Gitee Pages
+        uses: yanglbme/gitee-pages-action@main
+        with:
+          # 注意替换为你的 Gitee 用户名
+          gitee-username: haha233jpg
+          # 注意在 Settings-&gt;Secrets 配置 GITEE_PASSWORD
+          gitee-password: $
+          # 注意替换为你的 Gitee 仓库，仓库名严格区分大小写，请准确填写，否则会出错
+          gitee-repo: haha233jpg/haha233jpg
+          # 要部署的分支，默认是 master，若是其他分支，则需要指定（指定的分支必须存在）
+          branch: master
+</code></pre></div></div>
+<p>  <code class="language-plaintext highlighter-rouge">gitee-username</code>替换为自己的Gitee用户名,<code class="language-plaintext highlighter-rouge">gitee-repo</code>替换成自己的仓库。</p>
+
+<h2 id="2-仓库设置">2. 仓库设置</h2>
+<p>  从我们的仓库页面来到<code class="language-plaintext highlighter-rouge">管理</code>，进入<code class="language-plaintext highlighter-rouge">Secrets and variables</code>并点击<code class="language-plaintext highlighter-rouge">New repository secrets</code>新建密钥
+<img src="/assets/images/2024-4-24/仓库设置.png" alt="gitee 图片" />
+  这里的<code class="language-plaintext highlighter-rouge">Name</code>填入<code class="language-plaintext highlighter-rouge">GITEE_PASSWORD</code>，<code class="language-plaintext highlighter-rouge">Secret</code>直接填入gitee账号的密码，然后点击<code class="language-plaintext highlighter-rouge">Add secret</code>完成设置。</p>
+
+<h2 id="3-注意事项">3. 注意事项</h2>
+<p>  <strong>代码部分</strong>这里需要注意，大佬的代码不能无脑复制粘贴，branch两处对应的参数main应修改为master。（需要来到我们的Pages界面查看部署分支，大部分人应该都是master，若为其他则需要相应替换）
+<img src="/assets/images/2024-4-24/部署分支.png" alt="镜像 图片" />
+  <strong>密钥部分</strong>：这一部分大佬没有介绍，但网上可以找到包含这一部分的教程，不过因为gitee版本问题，不完全一样，现版本<code class="language-plaintext highlighter-rouge">Secrets</code>变成了<code class="language-plaintext highlighter-rouge">Secrets and variables</code>，同时内容新增了一个<code class="language-plaintext highlighter-rouge">Environment secrets</code>，具有一定误导性，跟着我的教程操作即可。</p>
+
+<p>  <strong>重要问题</strong>：由于同步使用的是自带功能，与Page的同步方式不一致，如果先触发Page的同步，之后再触发仓库的同步会导致网页不会及时更新，一种方法是仓库同步也通过这种方法解决，这里我取了个巧，不知道能否解决这个问题，修改了更新的触发方式为Push，并且在gitee里面设置自动同步到Github，Github新建一个仓库，同时，我们去掉github主仓库的密钥，这样第一次更新不会成功，直接等到第二次再进行更新，就可以解决这个问题。（github里卖弄需要关掉Action失败的邮件通知，不然会一直轰炸）</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>name: Sync
+on:
+  push:
+    branches: ["master"]
+    #workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Build Gitee Pages
+        uses: yanglbme/gitee-pages-action@main
+        with:
+          # 注意替换为你的 Gitee 用户名
+          gitee-username: haha233jpg
+          # 注意在 Settings-&gt;Secrets 配置 GITEE_PASSWORD
+          gitee-password: $
+          # 注意替换为你的 Gitee 仓库，仓库名严格区分大小写，请准确填写，否则会出错
+          gitee-repo: haha233jpg/haha233jpg
+          # 要部署的分支，默认是 master，若是其他分支，则需要指定（指定的分支必须存在）
+          branch: master
+</code></pre></div></div>]]></content><author><name>haha233jpg</name></author><category term="教程" /><category term="博客" /><category term="教程" /><category term="博客" /><summary type="html"><![CDATA[1. gitee仓库创建   使用大佬仓库ylb/gitee-pages-action完成自动更新Gitee Pages，网上教程大部分时间跨度太长，不适用于现在的环境，故此篇教程从0开始辅导小白完成该项目。]]></summary></entry><entry><title type="html">国内访问博客（gitee同步github）</title><link href="/jekyll-theme-yat/%E6%95%99%E7%A8%8B/%E5%8D%9A%E5%AE%A2/2024/04/24/%E5%9B%BD%E5%86%85%E8%AE%BF%E9%97%AE%E5%8D%9A%E5%AE%A2-gitee%E5%90%8C%E6%AD%A5github.html" rel="alternate" type="text/html" title="国内访问博客（gitee同步github）" /><published>2024-04-24T00:00:00+00:00</published><updated>2024-04-24T00:00:00+00:00</updated><id>/jekyll-theme-yat/%E6%95%99%E7%A8%8B/%E5%8D%9A%E5%AE%A2/2024/04/24/%E5%9B%BD%E5%86%85%E8%AE%BF%E9%97%AE%E5%8D%9A%E5%AE%A2%EF%BC%88gitee%E5%90%8C%E6%AD%A5github%EF%BC%89</id><content type="html" xml:base="/jekyll-theme-yat/%E6%95%99%E7%A8%8B/%E5%8D%9A%E5%AE%A2/2024/04/24/%E5%9B%BD%E5%86%85%E8%AE%BF%E9%97%AE%E5%8D%9A%E5%AE%A2-gitee%E5%90%8C%E6%AD%A5github.html"><![CDATA[<h2 id="1-gitee仓库创建">1. gitee仓库创建</h2>
+<p>  主页右上角<code class="language-plaintext highlighter-rouge">+</code>选择<code class="language-plaintext highlighter-rouge">新建仓库</code>
+<img src="/assets/images/2024-4-24/新建.png" alt="新建 图片" />
+  二级页面中右上角<code class="language-plaintext highlighter-rouge">点击导入</code>
+<img src="/assets/images/2024-4-24/新建仓库.png" alt="新建仓库 图片" />
+  接着在<code class="language-plaintext highlighter-rouge">导入仓库</code>界面<code class="language-plaintext highlighter-rouge">Git仓库URL</code>栏填上上一章我们在Github中创建的仓库地址（获取方法在文章末尾处）
+<img src="/assets/images/2024-4-24/导入仓库.png" alt="导入仓库 图片" />
+  同时注意仓库名称必须与gitee用户名一致，不然最后生成的网页域名又臭又长，接着仓库可以设置成开源，完成后导入即可。（导入源是github，所以需要用点科技，后续操作如果卡住，也可试试科技）</p>
+
+<h2 id="2-gitee-page使用">2. gitee page使用</h2>
+<p>  在我们的仓库页面可以看到<code class="language-plaintext highlighter-rouge">服务</code>选项，选择<code class="language-plaintext highlighter-rouge">Gitee Pages</code>
+<img src="/assets/images/2024-4-24/giteepage.png" alt="gitee 图片" />
+  第一次使用会提示实名，按流程操作等待即可
+  Gitee Pages页面只需要勾选<code class="language-plaintext highlighter-rouge">强制使用HTTPS</code>即可，确定后稍作等待
+<img src="/assets/images/2024-4-24/启用page.png" alt="启用 图片" />
+  这里可以看到出现我们网站的域名，接着便可以通过该域名正常访问我们的博客（无需科技）
+<img src="/assets/images/2024-4-24/出现域名.png" alt="域名 图片" /></p>
+
+<h2 id="3-自动同步github仓库">3. 自动同步github仓库</h2>
+<p>  在该仓库页面点击<code class="language-plaintext highlighter-rouge">管理</code>进入设置，之后点击仓库镜像管理，右上角<code class="language-plaintext highlighter-rouge">添加镜像</code>
+<img src="/assets/images/2024-4-24/镜像.png" alt="镜像 图片" />
+  镜像方向出选择<code class="language-plaintext highlighter-rouge">Pull</code>(从github将仓库同步到这里)，<code class="language-plaintext highlighter-rouge">镜像仓库选择上节中创建好的仓库</code>，最后<code class="language-plaintext highlighter-rouge">获取私人令牌</code>，此处有官方教程，不再赘述，最后点击<code class="language-plaintext highlighter-rouge">添加</code>完成仓库同步。</p>
+
+<h2 id="4-获取github仓库地址">4. 获取Github仓库地址</h2>
+<p>  来到我们的Github仓库界面，在<code class="language-plaintext highlighter-rouge">code</code>处这一串https地址即为我们的仓库地址
+<img src="/assets/images/2024-4-24/github仓库地址.png" alt="github仓库地址 图片" /></p>
+
+<h2 id="5-注意事项">5. 注意事项</h2>
+<p>  <strong>实名部分</strong>：实名要求很严格，身份证照片简单，但是手持证件照有一定难度，拍摄时必须保证身份证显示清晰（真的不能有一点模糊，我就是因为模糊，审核从星期三到了星期三，花了一个星期，因为周末不审核，一次2天起步），不想多花时间这一步要好好对待，人像可以模糊一点，同时必须露出手臂，上面有范例图片。</p>
+
+<p>  <strong>获取令牌部分</strong>：这里切记选择第二项（因为官方教程是按第二个来的），不然会找不到对应设置。
+<img src="/assets/images/2024-4-24/令牌.png" alt="令牌 图片" />
+  <strong>文档编辑部分</strong>：我们使用gitee同步仓库是为了国内直接访问，但是这个主题使用的图片和视频一部分来源是网络，国内无法访问，所以我们需要将对应资源下载下来放到仓库，这里推荐将图片和视频放到<code class="language-plaintext highlighter-rouge">/assets/images</code>和<code class="language-plaintext highlighter-rouge">/assets/videos</code>文件夹下。同时需要注意，在编辑markdown文件时，这部分地址需要使用<code class="language-plaintext highlighter-rouge">" "</code>包起来，不然主页的博客不会显示对应帖子的预览图。
+<img src="/assets/images/2024-4-24/预览图.png" alt="预览 图片" />
+  <strong>代码部分</strong>：这个主题存在不贴切国内的地方，以上操作完后会发现在访问网页时，内容明明加载完了，但浏览器进度条依然在加载，这是因为主题内挂载了谷歌翻译，国内无法访问，这里直接屏蔽掉<code class="language-plaintext highlighter-rouge">_includes/extensions/goole-translate.html</code>最后一行。</p>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span> <span class="na">src=</span><span class="s">"https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"</span> <span class="na">async</span><span class="nt">&gt;&lt;/script&gt;</span>
+</code></pre></div></div>]]></content><author><name>haha233jpg</name></author><category term="教程" /><category term="博客" /><category term="教程" /><category term="博客" /><summary type="html"><![CDATA[1. gitee仓库创建   主页右上角+选择新建仓库   二级页面中右上角点击导入   接着在导入仓库界面Git仓库URL栏填上上一章我们在Github中创建的仓库地址（获取方法在文章末尾处）   同时注意仓库名称必须与gitee用户名一致，不然最后生成的网页域名又臭又长，接着仓库可以设置成开源，完成后导入即可。（导入源是github，所以需要用点科技，后续操作如果卡住，也可试试科技）]]></summary></entry><entry><title type="html">我的博客创建经历（github）</title><link href="/jekyll-theme-yat/%E6%95%99%E7%A8%8B/%E5%8D%9A%E5%AE%A2/2024/04/17/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2%E5%88%9B%E5%BB%BA%E7%BB%8F%E5%8E%86-Github.html" rel="alternate" type="text/html" title="我的博客创建经历（github）" /><published>2024-04-17T00:00:00+00:00</published><updated>2024-04-17T00:00:00+00:00</updated><id>/jekyll-theme-yat/%E6%95%99%E7%A8%8B/%E5%8D%9A%E5%AE%A2/2024/04/17/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2%E5%88%9B%E5%BB%BA%E7%BB%8F%E5%8E%86%EF%BC%88Github%EF%BC%89</id><content type="html" xml:base="/jekyll-theme-yat/%E6%95%99%E7%A8%8B/%E5%8D%9A%E5%AE%A2/2024/04/17/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2%E5%88%9B%E5%BB%BA%E7%BB%8F%E5%8E%86-Github.html"><![CDATA[<h2 id="大致经历">大致经历</h2>
+<ol>
+  <li>github仓库创建</li>
+  <li>仓库设置</li>
+  <li>博客网页设置</li>
+  <li>注意事项</li>
+</ol>
+
+<h2 id="1-github仓库创建">1. github仓库创建</h2>
+<p>  主题来源：<a href="http://jekyllthemes.org/">jekyllthemes</a></p>
+
+<p>  我这里使用的是<code class="language-plaintext highlighter-rouge">Yet Another Theme(YAT)</code></p>
+
+<p>  选择合适主题后，通过<code class="language-plaintext highlighter-rouge">Homepage</code>跳转至Github对应仓库（注：<code class="language-plaintext highlighter-rouge">Demo</code>可预览成品效果），Github仓库中点击<code class="language-plaintext highlighter-rouge">Fork</code>克隆到自己的仓库，<code class="language-plaintext highlighter-rouge">Repository name</code>处填写<code class="language-plaintext highlighter-rouge">自己的github用户名</code>+<code class="language-plaintext highlighter-rouge">.github.io</code>即可，随后点击Create fork完成创建。</p>
+
+<h2 id="2-仓库设置">2. 仓库设置</h2>
+<p>  在自己的该项目页面点击<code class="language-plaintext highlighter-rouge">Setting</code>进入设置界面，左侧栏目中选择<code class="language-plaintext highlighter-rouge">Pages</code>页面  ，然后在<code class="language-plaintext highlighter-rouge">Build and deployment</code>栏目下的<code class="language-plaintext highlighter-rouge">Source</code>选项选择<code class="language-plaintext highlighter-rouge">Github Actions</code>,弹出框点击<code class="language-plaintext highlighter-rouge">Configure</code>完成配置。之后点击页面右上角处<code class="language-plaintext highlighter-rouge">Commit changes...</code>将自动生成的YML文件提交。</p>
+
+<p>  上方<code class="language-plaintext highlighter-rouge">actions</code>页面可以查看构建进度，完成后即可通过创建时填写的<code class="language-plaintext highlighter-rouge">自己的github用户名</code>+<code class="language-plaintext highlighter-rouge">.github.io</code>域名进行访问。</p>
+<h2 id="3-博客网页设置">3. 博客网页设置</h2>
+<p>  根目录下<code class="language-plaintext highlighter-rouge">_config.yml</code>文件可进行更改，27-29行处可更改为自己的标题、邮箱和作者。</p>
+
+<p>  <code class="language-plaintext highlighter-rouge">_posts</code>文件夹下为博客文件，由markdown编写。</p>
+
+<p>  <code class="language-plaintext highlighter-rouge">_layout</code>文件夹下为网站页面，可以自由修改美化。</p>
+<h2 id="4-注意事项">4. 注意事项</h2>
+<p>  <strong>主题均为英文主题</strong>，国人使用需注意，若想省去汉化麻烦可克隆博主仓库。</p>
+
+<p>  新手上路在编辑文件后不要心急，重新构建需要时间（我还真不知道会重新构建，刷新网页都没变化，一度怀疑有问题），进度可在<code class="language-plaintext highlighter-rouge">Actions</code>页面下查看。</p>
+
+<p>  <strong>自己汉化重点部分</strong>：网页主页的标题以及副标题部分不完全在<code class="language-plaintext highlighter-rouge">_layouts</code>文件夹下<code class="language-plaintext highlighter-rouge">home.html</code>中更改，主要部分在<code class="language-plaintext highlighter-rouge">_data</code>文件夹下的<code class="language-plaintext highlighter-rouge">defaults.yml</code>文件（一个大坑，改完网页都没变化，找了好久才找到），类似部分有几个但不多，其余部分干扰项较小，容易修改。</p>]]></content><author><name>haha233jpg</name></author><category term="教程" /><category term="博客" /><category term="教程" /><category term="博客" /><summary type="html"><![CDATA[大致经历 github仓库创建 仓库设置 博客网页设置 注意事项]]></summary></entry></feed>
